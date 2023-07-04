@@ -7,7 +7,10 @@ The multiples of 3 are Fizzed,
 And the multiples of 5 are Buzzed.
 Multiples of both are FizzBuzzed.\n""")
 
-for num in range(1,101):
+start_num = int(input("Enter an integer for the starting number: >> "))
+end_num = int(input("Enter an integer for the ending number: >> "))
+
+for num in range(start_num, end_num + 1):
     if num % 3 == 0 and num % 5 == 0:
         print("FizzBuzz")
     elif num % 3 == 0:
